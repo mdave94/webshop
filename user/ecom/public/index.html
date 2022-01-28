@@ -18,9 +18,20 @@
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
-    <title>React App</title>
+    <title>Basic Webshop</title>
+    
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "e73f1958-0610-4907-92f4-b9fc4d04466b",
+        });
+      });
+</script>
   </head>
   <body>
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
