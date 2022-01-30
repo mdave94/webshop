@@ -8,10 +8,10 @@ class AppRoute extends Component {
     return (
         <Fragment>
             <Switch>
-            <Route path="/" >
+            <Route  exact path="/" >
                     <HomePage/>
               </Route>
-                <Route path="/test" >
+                <Route exact path="/test" >
                     <TestPage/>
                 </Route>
             </Switch>
