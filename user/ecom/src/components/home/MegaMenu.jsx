@@ -13,6 +13,8 @@ class MegaMenu extends Component {
   
     MegaMenu(){
         var accordion = document.getElementsByClassName('accordion'); 
+
+        console.log(typeof(accordion));
         var accNum = accordion.length;
 
         for (var i = 0 ;i<accNum;++i){
