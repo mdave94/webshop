@@ -68,12 +68,12 @@ export class NewArrival extends Component {
                       <Container className="text-center" fluid={true}>
 
                             <div className="section-title text-center mb-55"><h2> NEW ARRIVAL  
-                                <a className='btn btn-sm ml-2 site-btn' onClick={this.previous}>
+                                <button className='btn btn-sm ml-2 site-btn' onClick={this.previous}>
                             <i className='fa fa-angle-left'></i>
-                          </a>
-                          <a className='btn btn-sm ml-2 site-btn'  onClick={this.next} >
+                          </button>
+                          <button className='btn btn-sm ml-2 site-btn'  onClick={this.next} >
                             <i className='fa fa-angle-right'></i>
-                          </a></h2>
+                          </button></h2>
                              
                              <p>New Arrival random text</p>
                             </div>
