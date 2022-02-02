@@ -8,6 +8,7 @@ import FeaturedProducts from '../components/home/FeaturedProducts'
 import HomeTop from '../components/home/HomeTop'
 import HomeTopMobile from '../components/home/HomeTopMobile'
 import NewArrival from '../components/home/NewArrival'
+import FooterMobile from '../components/common/FooterMobile'
 
 export class HomePage extends Component {
      render() { 
@@ -27,8 +28,15 @@ export class HomePage extends Component {
                     <NewArrival />
                     <Categories />
                     <Collection />
-                    <FooterDesktop/>
-                    
+                   
+
+                    <div className="Desktop">
+                     <FooterDesktop/>
+                    </div>
+
+                    <div className="Mobile">
+                       <FooterMobile/>
+                    </div>
                </Fragment>
           )
      }
