@@ -15,7 +15,7 @@ class HomeTop extends Component {
                       <MegaMenu/>
                     </Col>
 
-                    <Col lg={6} md={6} sm={12} xs={12}>
+                    <Col lg={8} md={6} sm={12} xs={12}>
                     <HomeSlider/>
                     </Col>
                 </Row>
