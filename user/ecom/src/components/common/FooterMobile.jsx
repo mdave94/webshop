@@ -15,7 +15,7 @@ class FooterMobile extends Component {
                 <Col className="p-2" lg={3} md={3} sm={6} xs={12}>
                       <h5 className="footer-menu-title">OFFICE ADDRESS</h5>
                       <p>1635 Franklin Street Montgomery, Near Sherwood Mall. AL 36104 <br></br>
-                      Email: Support@easylearningbd.com
+                      
                       </p>
                       <h5 className="footer-menu-title">SOCIAL LINK</h5>
                       <a href=""><i className="fab m-1 h4 fa-facebook"></i></a>
