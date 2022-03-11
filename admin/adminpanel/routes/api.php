@@ -15,9 +15,6 @@ use App\Http\Controllers\Admin\VisitorController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
 
 Route::GET('/getvisitor',[VisitorController::class,'GetVisitorDetails']);
+Route::GET('/postcontact',[VisitorController::class,'PostContactDetails']);
