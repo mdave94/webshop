@@ -18,7 +18,7 @@ class ContactController extends Controller
         $contact_date = date("d-m-Y");
 
 
-     return   $result = Contact::insert([
+     return $result = Contact::insert([
             'name' => $name,
             'email'=> $email,
             'message' => $message,
