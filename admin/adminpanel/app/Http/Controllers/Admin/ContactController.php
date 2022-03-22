@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Carbon\Carbon;
-use App\Models\Contanct;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -17,7 +17,7 @@ class ContactController extends Controller
         $contact_time = date("h:i:sa");
         $contact_date = date("d-m-Y");
 
-
+    //    return $request;
      return $result = Contact::insert([
             'name' => $name,
             'email'=> $email,
