@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\VisitorController;
+use App\Http\Controllers\Admin\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,4 @@ use App\Http\Controllers\Admin\VisitorController;
 
 
 Route::GET('/getvisitor',[VisitorController::class,'GetVisitorDetails']);
-Route::GET('/postcontact',[VisitorController::class,'PostContactDetails']);
+Route::GET('/postcontact',[ContactController::class,'PostContactDetails']);
