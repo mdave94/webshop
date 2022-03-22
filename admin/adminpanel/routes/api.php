@@ -18,4 +18,4 @@ use App\Http\Controllers\Admin\ContactController;
 
 
 Route::GET('/getvisitor',[VisitorController::class,'GetVisitorDetails']);
-Route::GET('/postcontact',[ContactController::class,'PostContactDetails']);
+Route::POST('/postcontact',[ContactController::class,'PostContactDetails']);
