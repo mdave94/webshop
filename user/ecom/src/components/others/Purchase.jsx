@@ -1,7 +1,30 @@
-import React, { Component, Fragment } from 'react'
-import { Container,Row,Col, } from 'react-bootstrap'
+import React, { Component, Fragment } from 'react';
+import { Container,Row,Col, } from 'react-bootstrap';
+import AppURL from '../../api/AppURL';
+import axios from 'axios';
 
 export class Purchase extends Component {
+
+     constructor(){
+          super();
+          this.state={
+               purchase:""
+          }
+     }
+
+     componentDidMount(){
+          axios.get(AppURL.AllSiteInfo).then(response =>{
+               let StatusCode = response.status;
+               if(StatusCode==200){
+                    let JsonData = (response.data)[0]['parchase_guide'];
+                    this.setState({purchase:JsonData});
+               } 
+
+          }).catch(error=>{
+
+          });
+     }
+
      render() {
           return (
                <Fragment>
@@ -10,13 +33,7 @@ export class Purchase extends Component {
             <Col className="shadow-sm bg-white mt-2" md={12} lg={12} sm={12} xs={12}>
       <h4 className="section-title-login">Purchase Page </h4>
       <p className="section-title-contact">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada nisl fringilla mauris 
-      convallis aliquet. Cras cursus rhoncus neque, rhoncus accumsan tortor luctus eget.
-       Nulla a pulvinar enim. In faucibus pellentesque imperdiet. Proin hendrerit, massa at tincidunt 
-       tristique, ex nunc imperdiet dolor, eget luctus libero magna eget purus. Lorem ipsum dolor sit amet, 
-       consectetur adipiscing elit. Vivamus elementum rutrum dolor et feugiat. Integer tempor commodo 
-       facilisis. Duis sit amet aliquam libero. Curabitur pellentesque ante quis nisl lobortis bibendum. 
-       Maecenas ut quam at neque suscipit mollis.
+               {this.state.purchase}
       </p>
 
 

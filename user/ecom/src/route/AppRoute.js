@@ -1,4 +1,5 @@
 import React, { Component,Fragment } from 'react';
+import AboutPage from '../pages/AboutPage';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import UserLoginPage from '../pages/UserLoginPage';
@@ -27,6 +28,7 @@ class AppRoute extends Component {
             <Route exact path="/purchase" component={PurchasePage} />
                <Route exact path="/privacy" component={PrivacyPage} />
                <Route exact path="/refund" component={RefundPage} />
+               <Route exact path="/about" component={AboutPage} />
                <Route exact path="/productdetails" component={ProductDetailsPage} />
             </Switch>
 
