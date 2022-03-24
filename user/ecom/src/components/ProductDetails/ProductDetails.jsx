@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Container,Row,Col, Form,Button } from 'react-bootstrap'
+import { Container,Row,Col } from 'react-bootstrap'
 import Product1 from '../../assets/images/product/product1.png'
 import Product2 from '../../assets/images/product/product2.png'
 import Product3 from '../../assets/images/product/product3.png'
@@ -13,20 +13,20 @@ class ProductDetails extends Component {
 <Col className="shadow-sm bg-white pb-3 mt-4" md={12} lg={12} sm={12} xs={12}>
      <Row>
           <Col className="p-3" md={6} lg={6} sm={12} xs={12}>
-          <img className="w-100" src={Product1} />
+          <img className="w-100" alt="" src={Product1} />
           <Container  className="my-3">
                <Row>
                     <Col className="p-0 m-0"  md={3} lg={3} sm={3} xs={3}>
-                         <img className="w-100" src={Product1} />
+                         <img className="w-100" alt="" src={Product1} />
                     </Col>
                     <Col className="p-0 m-0" md={3} lg={3} sm={3} xs={3}>
-                         <img className="w-100" src={Product2} />
+                         <img className="w-100" alt="" src={Product2} />
                     </Col>
                     <Col className="p-0 m-0" md={3} lg={3} sm={3} xs={3}>
-                         <img className="w-100" src={Product3} />
+                         <img className="w-100" alt="" src={Product3} />
                     </Col>
                     <Col className="p-0 m-0" md={3} lg={3} sm={3} xs={3}>
-                         <img className="w-100" src={Product4} />
+                         <img className="w-100" alt="" src={Product4} />
                     </Col>
                </Row>
           </Container>

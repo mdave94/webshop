@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import {Navbar,Container, Row, Col,Button,Card} from 'react-bootstrap';
+import {Container, Row, Col,Button,Card} from 'react-bootstrap';
 import Product1 from '../../assets/images/product/product1.png'
 
 class Cart extends Component {
@@ -22,7 +22,7 @@ class Cart extends Component {
                <Card.Body>
                <Row>
                     <Col md={3} lg={3} sm={6} xs={6}>
-                         <img className="cart-product-img" src={Product1} />
+                         <img className="cart-product-img" alt="" src={Product1} />
                     </Col>
 
                     <Col md={6} lg={6} sm={6} xs={6}>
@@ -49,7 +49,7 @@ class Cart extends Component {
                <Card.Body>
                <Row>
                     <Col md={3} lg={3} sm={6} xs={6}>
-                         <img className="cart-product-img" src={Product1} />
+                         <img className="cart-product-img" alt="" src={Product1} />
                     </Col>
 
                     <Col md={6} lg={6} sm={6} xs={6}>
@@ -75,7 +75,7 @@ class Cart extends Component {
                <Card.Body>
                <Row>
                     <Col md={3} lg={3} sm={6} xs={6}>
-                         <img className="cart-product-img" src={Product1} />
+                         <img className="cart-product-img" alt="" src={Product1} />
                     </Col>
 
                     <Col md={6} lg={6} sm={6} xs={6}>
@@ -102,7 +102,7 @@ class Cart extends Component {
                <Card.Body>
                <Row>
                     <Col md={3} lg={3} sm={6} xs={6}>
-                         <img className="cart-product-img" src="https://rukminim1.flixcart.com/image/416/416/knm2s280/mobile/j/x/c/hot-10-play-x688b-infinix-original-imag29gxqzuxkmnk.jpeg?q=70" />
+                         <img className="cart-product-img" alt="" src="https://rukminim1.flixcart.com/image/416/416/knm2s280/mobile/j/x/c/hot-10-play-x688b-infinix-original-imag29gxqzuxkmnk.jpeg?q=70" />
                     </Col>
 
                     <Col md={6} lg={6} sm={6} xs={6}>
