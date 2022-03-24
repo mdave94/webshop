@@ -124,7 +124,7 @@ export class Contact extends Component {
             Email: david@molnardavid.hu
            </p>
 
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345147.40102694626!2d18.850122543295793!3d47.480872206758995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2sBudapest!5e0!3m2!1shu!2shu!4v1643889924772!5m2!1shu!2shu" width="600" height="450" styles="border:0;" allowFullScreen="" loading="lazy"></iframe>
+           <iframe title='google-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345147.40102694626!2d18.850122543295793!3d47.480872206758995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2sBudapest!5e0!3m2!1shu!2shu!4v1643889924772!5m2!1shu!2shu" width="600" height="450" styles="border:0;" allowFullScreen="" loading="lazy"></iframe>
            
                          </Col>
                     </Row>

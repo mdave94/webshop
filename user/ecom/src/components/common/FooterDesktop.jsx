@@ -17,9 +17,9 @@ export class FooterDesktop extends Component {
                
                </p>
                <h5 className="footer-menu-title">SOCIAL LINK</h5>
-               <a href=""><i className="fab m-1 h4 fa-facebook"></i></a>
-               <a href=""><i className="fab m-1 h4 fa-instagram"></i></a>
-               <a href=""><i className="fab m-1 h4 fa-twitter"></i></a>
+               <a href="#"><i className="fab m-1 h4 fa-facebook"></i></a>
+               <a href="#"><i className="fab m-1 h4 fa-instagram"></i></a>
+               <a href="#"><i className="fab m-1 h4 fa-twitter"></i></a>
           </Col>
 
           <Col className="p-2" lg={3} md={3} sm={6} xs={12}>
