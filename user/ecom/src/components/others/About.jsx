@@ -17,6 +17,8 @@ import ReactHtmlParser from 'react-html-parser';
              let StatusCode = response.status;
              if(StatusCode===200){
                   let JsonData = (response.data)[0]['about'];
+                  console.log("JsonData");
+                  console.log(JsonData);
                   this.setState({about:JsonData});
              } 
 
