@@ -1,7 +1,33 @@
-import React, { Component, Fragment } from 'react'
-import { Container,Row,Col,} from 'react-bootstrap'
+import React, { Component, Fragment } from 'react';
+import { Container,Row,Col,} from 'react-bootstrap';
+import AppURL from '../../api/AppURL';
+import axios from 'axios';
+import ReactHtmlParser from 'react-html-parser';
 
 class Refund extends Component {
+
+     constructor(){
+          super();
+          this.state={
+               refund:"",
+               loaderDiv:"",
+               mainDiv:"d-none"
+          }
+     }
+
+     componentDidMount(){
+          axios.get(AppURL.AllSiteInfo).then(response =>{
+               let StatusCode = response.status;
+               if(StatusCode==200){
+                    let JsonData = (response.data)[0]['refund'];
+                    this.setState({refund:JsonData,loaderDiv:"d-none",mainDiv:""});
+               } 
+
+          }).catch(error=>{
+
+          });
+     }
+
      render() {
           return (
                <Fragment>
@@ -9,11 +35,31 @@ class Refund extends Component {
                     <Row className="p-2">
             <Col className="shadow-sm bg-white mt-2" md={12} lg={12} sm={12} xs={12}>
       <h4 className="section-title-login">Refund Page </h4>
+
+     <div className={this.state.loaderDiv}>
+
+          <div class="ph-item">
+               <div class="ph-col-12"/>        
+               <div class="ph-row"/>
+               <div class="ph-col-4"/>
+               <div class="ph-col-8 empty"/>
+               <div class="ph-col-6"/>
+               <div class="ph-col-6 empty"/>
+               <div class="ph-col-12"/>
+               <div class="ph-col-12"/>
+               <div class="ph-col-12"/>
+               <div class="ph-col-12"/>
+           </div>
+     </div>
+
+     <div className={this.state.mainDiv}>
+      <h4 className="section-title-login">Refund Page </h4>
       <p className="section-title-contact">
-      Fusce imperdiet augue ac mauris ornare, nec mollis metus eleifend. Duis et nibh sapien.
-       Aliquam tempus ligula eu lorem egestas pulvinar fringilla vel metus. Nullam mattis id nisl 
-       ac eleifend. Cras sagittis commodo posuere. Fusce dolor libero, laoreet id tempus a, tincidunt 
-       eu dolor. In in risus tempor massa accumsan tincidunt.</p>
+
+      { ReactHtmlParser(this.state.refund) }       
+      </p>
+
+      </div>
 
 
                          </Col>
