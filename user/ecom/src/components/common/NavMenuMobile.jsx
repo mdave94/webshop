@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import {Navbar,Container, Row, Col,Button} from 'react-bootstrap';
+import {Container, Row, Col,Button} from 'react-bootstrap';
 import Logo from '../../assets/images/easyshop.png';
 import {Link} from "react-router-dom";
 import MegaMenuMobile from '../home/MegaMenuMobile';
@@ -17,7 +17,7 @@ class NavMenuMobile extends Component {
 
     SideNavOpenClose=()=>{
       let SideNavState = this.state.SideNavState;
-      let ContentOverState = this.state.ContentOverState;
+     // let ContentOverState = this.state.ContentOverState;
 
       if(SideNavState === "sideNavOpen"){
           this.setState({SideNavState:"sideNavClose",ContentOverState:"ContenOverLayClose"})
@@ -48,7 +48,7 @@ class NavMenuMobile extends Component {
               <Col lg={4} md={4} sm={12} xs={12}>
 
                 <Button  onClick={this.MenuBarClickHandler} className="btn"><i className="fa fa-bars"></i>  </Button>
-                  <Link to="/"> <img className="nav-logo" src={Logo} /> </Link>
+                  <Link to="/"> <img className="nav-logo" alt='' src={Logo} /> </Link>
                   <Button className="cart-btn"><i className="fa fa-shopping-cart"></i> 3 Items </Button>
               </Col> 
 

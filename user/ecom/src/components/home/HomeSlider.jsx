@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -55,13 +55,13 @@ class HomeSlider extends Component {
 
     <Slider {...settings}>
           <div>
-           <img className="slider-img" src={Slider1} />
+           <img className="slider-img" alt="" src={Slider1} />
           </div>
           <div>
-          <img className="slider-img" src={Slider2} />
+          <img className="slider-img" alt="" src={Slider2} />
           </div>
           <div>
-          <img className="slider-img" src={Slider3} />
+          <img className="slider-img"  alt="" src={Slider3} />
           </div>
 
         </Slider>

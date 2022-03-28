@@ -14,7 +14,7 @@ class NavMenuDesktop extends Component {
       <Container fluid={"true"} className="fixed-top shadow-sm p-2 mb-0 bg-white">  
                <Row>
                     <Col lg={4} md={4} sm={12} xs={12}>
-                    <Link to="/"> <img className="nav-logo" src={Logo} /> </Link>
+                    <Link to="/"> <img className="nav-logo" alt="" src={Logo} /> </Link>
                     </Col>
 
                     <Col className="p-1 mt-1" lg={4} md={4} sm={12} xs={12}>
