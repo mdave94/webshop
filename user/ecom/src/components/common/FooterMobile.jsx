@@ -26,8 +26,8 @@ class FooterMobile extends Component {
 
                 <Col className="p-2" lg={3} md={3} sm={6} xs={12}>
                     <h5 className="footer-menu-title">DOWNLOAD APPS</h5>
-                    <a><img src={Google}  /></a><br></br>
-                    <a><img className="mt-2" src={Apple}  /></a><br></br>
+                    <a><img alt='' src={Google}  /></a><br></br>
+                    <a><img alt='' className="mt-2" src={Apple}  /></a><br></br>
                 </Col>
 
             </Row>

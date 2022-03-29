@@ -48,7 +48,7 @@ render() {
       <ul>
           {
                (CatList.subcategory_name).map((SubList,i)=>{
-                    return <li><a href="#" className="accordionItemMobile" >{SubList.subcategory_name} </a></li>
+                    return <li key={i}><a href="#" className="accordionItemMobile" >{SubList.subcategory_name} </a></li>
 
                })    
           }

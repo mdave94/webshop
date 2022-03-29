@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Container,Row,Col, Form,Button } from 'react-bootstrap'
+import { Container,Row,Col} from 'react-bootstrap'
 import AppURL from '../../api/AppURL';
 import axios from 'axios'
 import ReactHtmlParser from 'react-html-parser';
@@ -17,7 +17,7 @@ class Privacy extends Component {
      componentDidMount(){
           axios.get(AppURL.AllSiteInfo).then(response =>{
                let StatusCode = response.status;
-               if(StatusCode==200){
+               if(StatusCode===200){
                     let JsonData = (response.data)[0]['privacy'];
                     this.setState({privacy:JsonData,loaderDiv:"d-none",mainDiv:""});
                } 

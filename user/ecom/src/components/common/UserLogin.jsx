@@ -1,6 +1,8 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from 'react';
 import { Container,Row,Col, Form,Button } from 'react-bootstrap'
-import Login from '../../assets/images/login.png'
+import Login from '../../assets/images/login.png';
+
+
 class UserLogin extends Component {
      render() {
           return (
