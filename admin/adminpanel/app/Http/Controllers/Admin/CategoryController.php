@@ -14,10 +14,8 @@ class CategoryController extends Controller
 
     {   
        
-    
         $categories = Category::all(); 
         $categoryDetails = [];        
-
 
 
         foreach ($categories as $value){
@@ -35,8 +33,8 @@ class CategoryController extends Controller
 
 
         }
-
        
         return $categoryDetails;
 
+    }
 }
