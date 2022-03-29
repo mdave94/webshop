@@ -11,6 +11,7 @@ use App\Models\Subcategory;
 class CategoryController extends Controller
 {
     public function GetAllCategories()
+
     {   
        
     
@@ -38,6 +39,4 @@ class CategoryController extends Controller
        
         return $categoryDetails;
 
-
-    }
 }
