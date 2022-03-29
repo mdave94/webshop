@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import AppURL from '../../api/AppURL';
 import axios from 'axios'
 
-class MegaMenuMobile extends Component {
-
+class MegaMenuAll extends Component {
+    
      constructor(){
           super();
           this.state ={
@@ -20,8 +20,6 @@ class MegaMenuMobile extends Component {
           });
      }
 
-
-
      MenuItemClick=(event)=>{
           event.target.classList.toggle("active");
           var panel = event.target.nextElementSibling;
@@ -33,22 +31,24 @@ class MegaMenuMobile extends Component {
 
      }
 
+     
 
-render() {
+
+     render() {
 
 
           const CatList = this.state.MenuData;
 
           const MyView = CatList.map((CatList,i)=>{
                return <div key={i.toString()}>
-      <button onClick={this.MenuItemClick} className="accordionMobile">
-      <img className="accordionMenuIconMobile" src={CatList.category_image} />&nbsp; {CatList.category_name}
+      <button onClick={this.MenuItemClick} className="accordionAll">
+      <img className="accordionMenuIconAll" src={CatList.category_image} />&nbsp; {CatList.category_name}
                         </button>
-          <div className="panelMobile">
+          <div className="panelAll">
       <ul>
           {
                (CatList.subcategory_name).map((SubList,i)=>{
-                    return <li><a href="#" className="accordionItemMobile" >{SubList.subcategory_name} </a></li>
+                    return <li><a href="#" className="accordionItemAll" >{SubList.subcategory_name} </a></li>
 
                })    
           }
@@ -65,8 +65,8 @@ render() {
 
 
           return (
-                <div className="accordionMenuDivMobile">
-                   <div className="accordionMenuDivInsideMobile">
+                <div className="accordionMenuDivAll">
+                   <div className="accordionMenuDivInsideAll">
 
                    {MyView}
 
@@ -77,4 +77,4 @@ render() {
      }
 }
 
-export default MegaMenuMobile
+export default MegaMenuAll
