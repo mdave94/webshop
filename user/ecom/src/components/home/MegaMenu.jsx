@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 
 class MegaMenu extends Component {
 
@@ -27,7 +27,7 @@ class MegaMenu extends Component {
           const MyView = CatList.map((CatList,i)=>{
                return <div key={i.toString()}>
       <button onClick={this.MenuItemClick} className="accordion">
-      <img className="accordionMenuIcon" src={CatList.category_image} />&nbsp; {CatList.category_name}
+      <img alt='' className="accordionMenuIcon" src={CatList.category_image} />&nbsp; {CatList.category_name}
                         </button>
           <div className="panel">
       <ul>

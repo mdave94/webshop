@@ -74,8 +74,6 @@ export class NewArrival extends Component {
                           <button className='btn btn-sm ml-2 site-btn'  onClick={this.next} >
                             <i className='fa fa-angle-right'></i>
                           </button></h2>
-                             
-                             <p>New Arrival random text</p>
                             </div>
 
 
