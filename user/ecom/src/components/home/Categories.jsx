@@ -18,7 +18,7 @@ class Categories extends Component {
 
      componentDidMount(){
           axios.get(AppURL.AllCategoryDetails).then(response =>{ 
-               
+              
                 this.setState({MenuData:response.data});
 
           }).catch(error=>{
