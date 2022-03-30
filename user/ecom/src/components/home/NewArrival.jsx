@@ -36,7 +36,6 @@ export class NewArrival extends Component {
 } 
 
 render() {
-console.log("test");
   const NewList = this.state.ProductData;
   const MyView = NewList.map((NewList,i)=>{
 
